@@ -1,0 +1,113 @@
+.contactpage-maincontainer {
+    width: 100%;
+    height: 664px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.contactpage-subcontainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactpage-title {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 30px 0 20px 0;
+}
+
+.contactpage-subtitle {
+    font-size: 23px;
+}
+
+.contactpage-form-container {
+    width: 65%;
+    margin-top: 70px;
+}
+
+.firstname-lastname-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.firstname,
+.lastname {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.firstname label,
+.lastname label,
+.email label {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.firstname input,
+.lastname input,
+.email input {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.subscribe-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-button-container button {
+    margin-top: 30px;
+    padding: 20px 55px;
+    border: 2px solid #414141;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+    .contactpage-maincontainer {
+        height: 735px;
+    }
+
+    .contactpage-subcontainer {
+        width: 95%;
+    }
+
+    .contactpage-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 48px 0 34px 0;
+    }
+
+    .contactpage-subtitle {
+        font-size: 19px;
+    }
+
+    .contactpage-form-container {
+        width: 95%;
+    }
+}

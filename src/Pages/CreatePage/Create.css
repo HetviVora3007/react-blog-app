@@ -1,0 +1,90 @@
+.createpage-main-container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.createpage-title {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 30px 0 20px 0;
+}
+
+.createpage-subtitle {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.createpage-subcontainer {
+    width: 45%;
+    height: 90%;
+    flex-direction: column;
+}
+
+.createpage-subcontainer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.createpage-subcontainer div label {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.createpage-subcontainer div input {
+    height: 35px;
+    outline: none;
+    border: none;
+    margin-top: 12px;
+    font-size: 17px;
+    border-bottom: 2.2px solid black;
+}
+
+.create-button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-button-link {
+    text-decoration: none;
+    outline: none;
+    padding: 17px 55px;
+    border: 2px solid #414141;
+    border-radius: 8px;
+    font-weight: 400;
+    color: black;
+}
+
+.create-button-link button {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+    .createpage-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 30px 0 25px 0;
+    }
+
+    .createpage-subtitle {
+        font-size: 19px;
+    }
+
+    .createpage-subcontainer {
+        width: 90%;
+    }
+
+    .create-button-link {
+        padding: 20px 65px;
+    }
+}
