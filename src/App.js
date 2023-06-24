@@ -62,6 +62,10 @@ function App() {
     removeBlogData(_id)
   }
 
+  if (loading) {
+    return <Loading />
+  }
+
   return (
     <>
       <BrowserRouter>
