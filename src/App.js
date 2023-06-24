@@ -8,27 +8,34 @@ import Contact from "./Pages/ContactPage/Contact";
 import Create from "./Pages/CreatePage/Create";
 import BackendUrl from "./Utils/BackendUrl"
 import AboutBlog from "./Pages/AboutBlogPage/AboutBlog";
+import Loading from "./Pages/LoadingPage/Loading";
 
 function App() {
 
   const [blogData, setBlogData] = useState([])
+  const [loading, setLoading] = useState(false)
 
   const getBlogData = async () => {
+    setLoading(true)
     const response = await fetch(BackendUrl)
     const data = await response.json()
     setBlogData(data)
+    setLoading(false)
   }
 
   useEffect(() => {
     const getBlogList = async () => {
+      setLoading(true)
       const response = await fetch(BackendUrl)
       const data = await response.json()
       setBlogData(data)
+      setLoading(false)
     }
     getBlogList()
   }, [])
 
   const addBlogData = async (formData) => {
+    setLoading(true)
     const response = await fetch(BackendUrl, {
       method: 'POST',
       body: JSON.stringify(formData),
@@ -40,6 +47,7 @@ function App() {
   }
 
   const removeBlogData = async (_id) => {
+    setLoading(true)
     const response = await fetch(BackendUrl + `/delete/${_id}/`, {
       method: 'DELETE',
     })
