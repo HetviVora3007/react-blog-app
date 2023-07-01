@@ -23,7 +23,7 @@ const AboutBlog = (props) => {
             <div className='aboutblogpage-maincontainer'>
                 <div className='aboutblogpage-subcontainer'>
                     <p className='aboutblogpage-blog-title'>{Data.blog_title}</p>
-                    <div className='image-container'><img src={Data.image_url} /></div>
+                    <div className='aboutblog-image-container'><img src={Data.image_url} /></div>
                     <p className='aboutblogpage-blog-description'>{Data.description}</p>
                 </div>
             </div>
